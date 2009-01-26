@@ -1,1 +1,6 @@
-This project uses python-twitter from google code to recieve Direct Messages on twitter and repeat them as updates.  This could be used for an anonymous multi-user bouncer with some code tweaks, but its original intent is as an easy, cheap way to do mass SMS.
+This project uses python-twitter from google code to recieve Direct
+Messages on twitter and repeat them as updates.  This could be used
+for an anonymous multi-user bouncer with some code tweaks, but its
+original intent is as an easy, cheap way to do mass SMS.
+
+See the anonymous branch for the anonymous version.
