@@ -5,11 +5,10 @@ original intent is as an easy, cheap way to do mass SMS.
 
 twitbounce.py has an option to be anonymous now
 
-Bouncer un/pw go in secret.py.  That file is straightforward.
-I may replace it with YAML or something but I don't see the value
-in doing so.
+All configuration is in twitter.cfg - the file is straightforward
 
-Right now twitbounce.py does all the work.  The other scripts
-used to do something useful until API changes kind of broke
-python-twitter.  I'll probably get rid of the python-twitter
-dependancy at some point, but that'll take a bit of work.
+Right now twitbounce.py does all the work.  The other scripts show
+who's following, who your friends (people you follow, and therefore
+can DM you) are, and allow you to add and remove friends.  The API
+doesn't support follow requests so if you make your updates private
+you have to do that manually.
