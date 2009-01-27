@@ -6,7 +6,7 @@ config = ConfigParser.ConfigParser()
 config.read('twitter.cfg')
 username = config.get('secrets','username')
 password = config.get('secrets','password')
-anon = config.get('settings','anonymous')
+anon = config.getboolean('settings','anonymous')
 api = twitter.Api(username=username,password=password)
 dm = api.GetDirectMessages()
 

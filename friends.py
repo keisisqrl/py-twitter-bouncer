@@ -1,6 +1,5 @@
 #!/usr/bin/python
 import twitter
-import sys
 import ConfigParser
 
 config = ConfigParser.ConfigParser()

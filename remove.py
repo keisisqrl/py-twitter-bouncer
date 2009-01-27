@@ -9,4 +9,4 @@ username = config.get('secrets','username')
 password = config.get('secrets','password')
 friend = sys.argv[1]
 api = twitter.Api(username=username,password=password)
-api.DestroyFriendship(user)
+api.DestroyFriendship(friend)
