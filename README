@@ -3,6 +3,8 @@ Messages on twitter and repeat them as updates.  This could be used
 for an anonymous multi-user bouncer with some code tweaks, but its
 original intent is as an easy, cheap way to do mass SMS.
 
+twitbounce.py has an option to be anonymous now
+
 Bouncer un/pw go in secret.py.  That file is straightforward.
 I may replace it with YAML or something but I don't see the value
 in doing so.
