@@ -16,9 +16,9 @@ for message in dm:
 		newpost = newpost + " -from " + message.sender_screen_name
 	try:
 		api.PostUpdate(newpost)
-	except twitter.TwitterError as e:
+	except twitter.TwitterError, e:
 		if anon:
 			api.PostDirectMessage(user=message.sender_id,text="Error:" + e)
 		if not anon:
-			api.PostDirectMessage(user=message.sender_id,text="Error:Text must be less than or equal to " + (140 - (len(message.sender_screen_name) + 7)) + " characters.")
+			api.PostDirectMessage(user=message.sender_id,text="Error:Text must be less than or equal to " + str(140 - (len(message.sender_screen_name) + 7)) + " characters.")
 	api.DestroyDirectMessage(message.id)
