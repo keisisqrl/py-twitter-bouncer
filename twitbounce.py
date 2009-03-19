@@ -21,4 +21,5 @@ for message in dm:
 			api.PostDirectMessage(user=message.sender_id,text="Error:" + e)
 		if not anon:
 			api.PostDirectMessage(user=message.sender_id,text="Error:Text must be less than or equal to " + str(140 - (len(message.sender_screen_name) + 7)) + " characters.")
-	api.DestroyDirectMessage(message.id)
+	finally:
+		api.DestroyDirectMessage(message.id)
